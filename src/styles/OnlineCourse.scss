@@ -1,0 +1,181 @@
+$body-bg: #0f1114;
+$card-bg: rgb(19, 22, 26);
+$btn-primary-color: #1246b5;
+$text-white: #f8fafc;
+$text-grey: #94a2b8;
+
+* {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03rem;
+  box-sizing: border-box;
+}
+ul{
+  margin-top: 10px;
+
+}
+p,
+
+li {
+  color: $text-grey;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+li {
+  list-style-type: disc;
+  list-style: inside;
+}
+h1,
+h2,
+h3 {
+  color: $text-white;
+}
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+}
+h3 {
+  font-weight: 400;
+}
+.btn {
+  color: $text-white;
+  font-size: 1.1rem;
+  padding: 7px 13px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  
+}
+
+.btn-primary {
+  background-color: $btn-primary-color;
+}
+.badge {
+  background-color: rgba($color: #a3a3a3, $alpha: 0.1);
+  color: $text-white;
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 3px;
+  padding: 3px 10px;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/images/mtg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 50vw, 4rem);
+    font-weight: 500;
+  }
+}
+
+.info-container {
+  background-color: $body-bg;
+  padding: 1rem;
+}
+
+.info,
+.modules {
+  max-width: 980px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: $card-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid $card-bg;
+  article {
+    max-width: 500px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  h2,
+  p {
+    margin-bottom: 20px;
+  }
+}
+
+.modules {
+  background-color: transparent;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+}
+
+.card {
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.4);
+  background-color: $card-bg;
+  border-radius: 15px;
+  overflow: hidden;
+  .card-text {
+    padding: 20px;
+    h3 {
+      margin-bottom: 20px;
+    }
+  }
+  .card-img {
+    height: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+    }
+  }
+  max-width: 350px;
+  max-height: 350px;
+}
+
+.pricing {
+  display: flex;
+  margin: auto;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.priceCard {
+  max-width: 400px;
+  padding: 1rem;
+  background-color: $card-bg;
+  border-radius: 15px;
+  small{
+    color: $text-grey;
+  }
+  button{
+    margin: 20px;
+    width: 80%;
+  }
+}
+
+.copyRight{
+  color:$text-grey;
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid $text-grey;
+  padding: 20px;
+}
